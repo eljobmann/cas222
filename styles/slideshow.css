@@ -1,0 +1,66 @@
+/** SLIDESHOW CSS **/
+
+#slideshow {
+    width: auto;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    margin: 2%;
+    border: white solid 1px;
+}
+
+#photos img{
+    margin: 1%;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+/* arrow navigation */
+
+.slideshow-arrow {
+    display: block;
+    position: absolute;
+    top: 250px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px;
+    border-color: transparent;
+    outline: none;
+}
+
+.slideshow-arrow:hover {
+    opacity: .5;
+    filter: alpha(opacity=50);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+}
+
+#slideshow-left {
+    left: 0;
+    width: 10px;
+    border-right-color: rgb(255,0,0);
+    opacity: .75;
+}
+
+#slideshow-right {
+    right: 0;
+    width: 10px;
+    border-left-color: rgb(255,0,0);
+    opacity: .75;
+}
+
+
+.slideshow-arrow,
+.slideshow-arrow:hover {
+    border-top-color: black;
+    border-bottom-color: black;
+    filter: chroma(color=pink);
+}
+
+#slideshow-left {
+    border-left-color: black;
+}
+
+#slideshow-right {
+    border-right-color: black;
+}

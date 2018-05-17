@@ -1,0 +1,143 @@
+nav {
+    margin: 1px;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+
+nav ul.opening {
+    display: block;
+    height: 30px;
+}
+
+nav li {
+    border-bottom: 1px solid #f6f4e2;
+}
+
+nav li:last-child {
+    border-bottom: none;
+}
+
+nav a {
+    color: #EBEBD3;
+    background: black;
+    display: block;
+    padding: 1.5em 4em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    background: rgba(255, 0, 0, .9);
+}
+
+.site-nav--icon {
+    font-size: 1.4em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255, 255, 255, .4);
+}
+
+/*Menu Toggle*/
+
+.menu-toggle {
+    position: absolute;
+    padding: 0.8em;
+    top: 1em;
+    right: .5em;
+    cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    display: block;
+    background: #EBEBD3;
+    height: 3px;
+    width: 1.5em;
+    border-radius: 3px;
+    -webkit-transition: all ease-in-out 350ms;
+    transition: all ease-in-out 350ms;
+}
+
+.hamburger::before {
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+
+.hamburger::after {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+}
+
+.open .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+    display: none;
+}
+
+.open .hamburger::after {
+    -webkit-transform: translateY(-1px) rotate(-90deg);
+    transform: translateY(-1px) rotate(-90deg);
+}
+
+
+/* Desktop media Query */
+
+@media (min-width: 780px) {
+
+    .menu-toggle {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+
+    nav li {
+        flex: 1 1 auto;
+        border: red solid 3px;
+    }
+
+    nav li a {
+        padding: 5px 3px 5px 3px;
+        margin: 0;
+        border: white solid 2px;
+        background-color: black;
+    }
+
+    nav a:hover,
+    nav a:focus {
+        background-color: rgba(255, 255, 255, .10);
+    }
+
+    .logo {
+        flex: 0 0 200px;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: center;
+        background-color: none;
+    }
+
+}

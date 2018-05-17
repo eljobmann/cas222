@@ -1,0 +1,243 @@
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-family: "Lato", sans-serif;
+        /* font-family: 'Averia Serif Libre', cursive;*/
+        font-family: 'Cutive Mono', monospace;
+        /*font-family: 'NTR', sans-serif;*/
+        /*font-family: 'Faster One', cursive;*/
+    }
+
+    body {
+        background: -moz-linear-gradient(left, rgba(10, 2, 2, 0.83) 17%, rgba(248, 0, 0, 0.78) 51%, rgba(255, 0, 0, 0.78) 52%, rgba(11, 0, 0, 0.85) 89%, rgba(4, 0, 0, 0.85) 90%);
+        /* FF3.6-15 */
+        background: -webkit-linear-gradient(left, rgba(10, 2, 2, 0.83) 17%, rgba(248, 0, 0, 0.78) 51%, rgba(255, 0, 0, 0.78) 52%, rgba(11, 0, 0, 0.85) 89%, rgba(4, 0, 0, 0.85) 90%);
+        /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(to right, rgba(10, 2, 2, 0.83) 17%, rgba(248, 0, 0, 0.78) 51%, rgba(255, 0, 0, 0.78) 52%, rgba(11, 0, 0, 0.85) 89%, rgba(4, 0, 0, 0.85) 90%);
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d40a0202', endColorstr='#d9040000', GradientType=1);
+        /* IE6-9 */
+        max-width: 100%;
+        margin: 5px;
+        top: 0;
+    }
+
+    header {
+        background: black;
+        width: 100%;
+        height: 90px;
+        top: 0;
+        border-bottom: 5px solid white;
+        opacity: .9;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    aside {
+        background-color: white;
+        font-weight: bold;
+        width: 40%;
+        bottom: 0;
+        margin: 10px 5px;
+        padding: 5px;
+        float: left;
+    }
+
+   main {
+        background-color: none;
+        max-width: 70%;
+        margin: 5px 10px;
+        float: left;
+        clear:right;       
+    }
+
+    section {
+        background: white;
+        margin: 5px;
+        align-content: center;
+        opacity: .
+    }
+
+    .sidebar-img {
+        width: 90%;
+        margin: 5%;
+        opacity: .5
+    }
+
+
+    footer {
+        background: black;
+        bottom: 0;
+        color: white;
+        margin: 0 10%;
+        width: auto;
+    }
+
+    footer ul {
+        list-style: none;
+    }
+
+    .footernav li {
+        display: inline-block;
+        padding: 5px;
+        background: white;
+        color: black;
+        width: auto;
+        margin: 5px;
+    }
+
+    footer a {
+        padding: 20px;
+    }
+
+  /*  nav {
+        float: right;
+        padding: 5 px;
+        margin: 1%;
+    }
+
+    a:hover#menu-icon {
+        background-color: #444;
+        border-radius: 4px 4px 0 0;
+    }
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav li {
+        display: inline-block;
+        padding: 10px;
+    }
+
+    .current {
+        color: white;
+    }
+*/
+    article {
+        background-color: black;
+        color: white;
+        width: auto;
+        content: center;
+        margin: 10px;
+        padding: 5px;
+    }
+
+    article img {
+        padding: 5px;
+    }
+
+    article p {
+        width: auto;
+        margin-left: 10px;
+    }
+
+    .pictured {
+        width: auto;
+        float: right;
+    }
+
+    .stories {
+        max-width: 60%;
+        margin: 0 10;
+    }
+
+    h2 {
+        background-color: white;
+        margin: 15px 20px;
+        padding: 3px;
+        text-align: center;
+    }
+
+    p {
+        background-color: white;
+        color: black;
+        padding: 10px;
+        margin: 2px;
+        text-align: justify;
+    }
+
+    .social {
+        display: inline-block;
+        width: 30%;
+        padding: 5px;
+        margin-left: 5px;
+        top: 0;
+    }
+
+    .social li {
+        display: block;
+        border: 5px solid white;
+        width: 90%;
+        text-align: center;
+        padding: 5px;
+        margin-left: 0;
+    }
+
+    .social ul {
+        list-style: none;
+    }
+
+    #social div {
+        display: inline-block;
+        margin: px;
+        padding: 10px;
+    }
+
+    /*MEDIA QUERY*/
+
+    @media only screen and (max-width: 640px) {
+
+        header {
+            position: absolute;
+        }
+        
+        aside {
+            width: auto;        
+        }
+        
+        #menu-icon {
+            display: inline-block;
+        }
+
+        nav ul,
+        nav:active ul {
+            display: none;
+            position: absolute;
+            padding: 20px;
+            background: #fff;
+            border: 5px solid #444;
+            right: 20px;
+            top: 60px;
+            width: 50%;
+            border-radius: 4px 0 4px 4px;
+        }
+
+        nav li {
+            text-align: center;
+            width: 100%;
+            padding: 10px 0;
+            margin: 0;
+        }
+
+        nav:hover ul {
+            display: block;
+        }
+
+        .social {
+            width: auto;
+        }
+}
+        
+    @media only screen and (min-width : 1200px) {
+            
+        aside {
+            width: 25%;
+        }
+        
+        }
