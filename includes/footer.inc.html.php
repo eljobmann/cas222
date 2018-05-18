@@ -8,7 +8,8 @@
                 <li><a href="<?php echo BASE_URL; ?>contact">Contact</a></li>
             </ul>
             </div>
-    <h4>Copyright &copy;
-            <?php echo date('Y'); ?> Elliott Jobmann</h4>
+    
+    <h3>Copyright &copy;
+            <?php echo date('Y'); ?> Elliott Jobmann</h3>
          <a href="mailto:aceinthehole@elliottjobmann.webhostingforstudents.com">Ace in The Hole Multisport Events</a>
 </footer>
