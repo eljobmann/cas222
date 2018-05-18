@@ -1,6 +1,7 @@
 nav {
-    margin: 1px;
+    margin: 10px;
     padding: 0;
+    float: right;
 }
 
 nav ul {
@@ -14,11 +15,11 @@ nav ul {
 
 nav ul.opening {
     display: block;
-    height: 30px;
+    height: 5px;
 }
 
 nav li {
-    border-bottom: 1px solid #f6f4e2;
+    border-bottom: none;
 }
 
 nav li:last-child {
@@ -29,14 +30,14 @@ nav a {
     color: #EBEBD3;
     background: black;
     display: block;
-    padding: 1.5em 4em;
+    padding: 1.5em 2em;
     text-transform: uppercase;
     text-decoration: none;
 }
 
 nav a:hover,
 nav a:focus {
-    background: rgba(255, 0, 0, .9);
+    background: rgb(255, 0, 0);
 }
 
 .site-nav--icon {
@@ -52,7 +53,7 @@ nav a:focus {
 .menu-toggle {
     position: absolute;
     padding: 0.8em;
-    top: 1em;
+    top: 1 em;
     right: .5em;
     cursor: pointer;
 }
@@ -64,7 +65,7 @@ nav a:focus {
     display: block;
     background: #EBEBD3;
     height: 3px;
-    width: 1.5em;
+    width: 2em;
     border-radius: 3px;
     -webkit-transition: all ease-in-out 350ms;
     transition: all ease-in-out 350ms;
@@ -92,52 +93,4 @@ nav a:focus {
 .open .hamburger::after {
     -webkit-transform: translateY(-1px) rotate(-90deg);
     transform: translateY(-1px) rotate(-90deg);
-}
-
-
-/* Desktop media Query */
-
-@media (min-width: 780px) {
-
-    .menu-toggle {
-        display: none;
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    nav li {
-        flex: 1 1 auto;
-        border: red solid 3px;
-    }
-
-    nav li a {
-        padding: 5px 3px 5px 3px;
-        margin: 0;
-        border: white solid 2px;
-        background-color: black;
-    }
-
-    nav a:hover,
-    nav a:focus {
-        background-color: rgba(255, 255, 255, .10);
-    }
-
-    .logo {
-        flex: 0 0 200px;
-        margin: 0;
-        padding-left: 20px;
-    }
-
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        text-align: center;
-        background-color: none;
-    }
-
 }
