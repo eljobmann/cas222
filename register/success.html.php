@@ -41,6 +41,7 @@
                   Phone: <?php echo htmlspecialchars ($phone, ENT_QUOTES, 'UTF-8'); ?><br>
                   Saturday Race: <?php echo htmlspecialchars ($satrace, ENT_QUOTES, 'UTF-8'); ?><br>
                   Sunday Race: <?php echo htmlspecialchars ($sunrace, ENT_QUOTES, 'UTF-8'); ?><br>
+                T-Shirt Size: <?php echo htmlspecialchars ($shirtsize, ENT_QUOTES, 'UTF-8'); ?>
                 </p>
             </main>
             <?php include '../includes/footer.inc.html.php'; ?>

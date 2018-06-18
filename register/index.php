@@ -1,7 +1,7 @@
 <?php
 
-include '../includes/db.inc.php';
-//include '../includes/db_local.inc.php';
+//include '../includes/db.inc.php';
+include '../includes/db_local.inc.php';
 
 // Modify the If statement so the try only runs if the First Name field has been submitted AND the honeypot field is empty ''
 
@@ -15,6 +15,7 @@ if ((isset($_POST['mysubmit'])) && (empty($_POST['honeypot'])))
     $pronouns = $_POST['mypronouns'];
     $satrace = $_POST['mysatrace'];
     $sunrace = $_POST['mysunrace'];
+    $shirtsize = $_POST['myshirtsize'];
     $erfirst = $_POST['erfname'];
     $erlast = $_POST['erlname'];
     $erphone = $_POST['phoner'];
@@ -29,6 +30,7 @@ if ((isset($_POST['mysubmit'])) && (empty($_POST['honeypot'])))
           pronouns = :pronouns,
           satrace = :satrace,
           sunrace = :sunrace,
+          shirtsize = :shirtsize,
         erfirst = :erfirst,
         erlast = :erlast,
         erphone = :erphone';
@@ -40,6 +42,7 @@ if ((isset($_POST['mysubmit'])) && (empty($_POST['honeypot'])))
         $s->bindValue(':pronouns', $pronouns);
         $s->bindValue(':satrace', $satrace);
         $s->bindValue(':sunrace', $sunrace);
+        $s->bindValue(':shirtsize', $shirtsize);
         $s->bindValue(':erfirst', $erfirst);
         $s->bindValue(':erlast', $erlast);
         $s->bindValue(':erphone', $erphone);

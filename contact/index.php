@@ -1,6 +1,7 @@
 <?php
 
-include '../includes/db.inc.php';
+//include '../includes/db.inc.php';
+include '../includes/db_local.inc.php';
 
 if ((isset($_POST['myName'])) && (empty($_POST['honeypot'])))
   {
